@@ -1,68 +1,36 @@
-## Laravel-Multi-Tenant
+# MultiTenantDemo – Laravel Multi-Tenant SaaS Demo
 
-A complete example of a multi-tenant Laravel application. It is only a demo, not a real application to use for production.
+MultiTenantDemo is a customized **multi-tenant SaaS demo application** built with **Laravel 10**.  
+It demonstrates how a single application can securely serve multiple tenants while keeping their data isolated.
 
-### What is Multi Tenant SaaS?
+This project is intended for **learning, practice, and demonstration purposes only** – not for direct production use.
 
-Multi-tenant SaaS, or Software as a Service, refers to a type of software architecture where a single instance of the software application serves multiple customers, known as tenants. Each tenant shares the same underlying infrastructure and code base, but their data and configurations are kept separate and isolated from one another.
+---
 
-## Technology Usage
+## About This Project
 
--   **[Laravel 10](https://laravel.com/docs/10.x)**
--   **[Blade Template](https://laravel.com/docs/10.x/blade#main-content)**
--   **[Vite JS](https://vitejs.dev/)**
--   **[Tailwind CSS](https://tailwindcss.com/)**
--   **[Tenancy for Laravel](https://tenancyforlaravel.com/)**
--   **[Laravel Permission](https://spatie.be/docs/laravel-permission/v6)**
+This project is **based on an open-source Laravel multi-tenant starter** and has been customized and extended by me for learning and portfolio purposes.
 
-## How to Run
+### Customizations & Improvements
+- Custom project structure and naming
+- Updated setup instructions
+- Improved configuration handling
+- Ready-to-extend base for tenant-based SaaS apps  
+- (You can add more features here as you implement them)
 
-Open your favourite terminal of and follow the instructions below to run the complete project on your machine!
+> Original base project credit:  
+> https://github.com/tarikulwebx/Laravel-Multi-Tenant  
+> Full credit to the original author for the initial foundation.
 
-### Step 1:
+---
 
-Clone the github repository by running the following command
+## What is Multi-Tenant SaaS?
 
-```
-git clone https://github.com/tarikulwebx/Laravel-Multi-Tenant.git
-```
+Multi-tenant SaaS (Software as a Service) is an architecture where:
 
-Navigate to the project directory
+- A **single application instance** serves multiple customers (tenants)
+- All tenants share the **same codebase and infrastructure**
+- Each tenant’s **data is fully isolated**
+- Cost, maintenance, and scaling become more efficient
 
-```
-cd Laravel-Multi-Tenant
-```
-
-### Step 2:
-
-Clone **.env.example** file and save as **.env**. Change environment variables as your need.
-
-### Step 3:
-
-Run following command to generate app key.
-
-```
-php artisan key:generate
-```
-
-### Step 4
-
-Migrate and seed by running the command
-
-```
-php artisan migrate --seed
-```
-
-### Step 5
-
-Run the project
-
-```
-php artisan serve
-```
-
-Open the project on http://localhost:8000/ link and tenants directory will be like the http://<tenant_domain_name>.localhost:8000/
-
-## Thank You!
-
-Be sure to give me a star on this project.
+This architecture is widely used in modern SaaS platforms such as CRMs, ERPs, and subsc
